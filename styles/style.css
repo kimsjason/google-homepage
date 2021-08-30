@@ -81,7 +81,8 @@ div.navbar {
     color: gray;
 }
 
-.navbar .material-icons:hover {
+.navbar a#google-apps-icon:hover {
+    text-decoration: none;
 }
 
 #sign-in {
