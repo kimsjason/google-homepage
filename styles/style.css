@@ -1,3 +1,12 @@
+/* NAVIGATION BAR AND FOOTER STYLES */
+.left-container {
+    float: left;
+}
+
+.right-container {
+    float: right;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -5,12 +14,73 @@ ul {
     overflow: hidden;
 }
 
-li.float-left {
-    float: left;
+li {
+    display: inline-block;
+    padding: 0 0px;
+    margin: 15px 5px;
+}
+
+a {
+    color: black;
+}
+
+a:link {
     text-decoration: none;
 }
 
-li.float-right {
-    float: right;
+a:visited {
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+/* NAVIGATION BAR STYLES */
+div.navbar {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 50px;
+}
+
+/* FOOTER STYLES */
+div.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+/* LOGO AND SEARCH BAR STYLES */
+#logo {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 20px 0px;
+}
+
+form {
+    text-align: center;
+}
+
+input[type='text'] {
+    width: 500px;
+    height: 40px;
+    border: 1.5px solid #cccccc;
+    border-radius: 25px;
+}
+
+input[type='text']:focus {
+    outline: none;
+    border: 1.5px solid #cccccc;
+    border-radius: 25px;
+    box-shadow: 1px 1px 5px 1px #cccccc;
+
 }
